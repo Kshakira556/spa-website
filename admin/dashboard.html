@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="product.html" id="product-page-link">Product Page</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="bookings">
+        <h2>Bookings</h2>
+        <table id="bookings-table">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Client Name</th>
+                <th>Service</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Table content will be dynamically populated -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="update-booking">
+        <h2>Update Booking</h2>
+        <form id="update-booking-form">
+            <input type="hidden" id="booking-id">
+            <label for="update-date">Date:</label>
+            <input type="date" id="update-date" name="date" required>
+            <label for="update-clientName">Client Name:</label>
+            <input type="text" id="update-clientName" name="clientName" required>
+            <label for="update-service">Service:</label>
+            <input type="text" id="update-service" name="service" required>
+            <button type="submit">Update Booking</button>
+        </form>
+    </section>
+</main>
+<script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.0.0",
+    "express-session": "^1.18.0",
+    "multer": "^1.4.4"
+  }
+}

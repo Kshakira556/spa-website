@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Product Management</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="product-upload">
+        <h2>Upload New Product</h2>
+        <form id="product-form" enctype="multipart/form-data">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="product-price">Price:</label>
+            <input type="number" id="product-price" name="product-price" step="0.01" required>
+
+            <label for="product-image">Image:</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required>
+
+            <button type="submit">Upload Product</button>
+        </form>
+        <div id="uploaded-image"></div>
+    </section>
+
+    <section id="product-list">
+        <h2>Existing Products</h2>
+        <table id="products-table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Table content will be dynamically populated -->
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Spa Services</p>
+</footer>
+<script src="../assets/js/product.js"></script>
+</body>
+</html>
